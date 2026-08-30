@@ -2,14 +2,15 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-terra-cream: #F6F0E6;
-  --color-terra-sand: #EAE0CC;
+  --color-terra-cream: #F5F0E6;
+  --color-terra-parchment: #EDE4D4;
   --color-terra-bark: #3B2D1E;
   --color-terra-brown: #5C4230;
   --color-terra-clay: #C4714A;
   --color-terra-olive: #6B7B4A;
-  --color-terra-slate: #4A6272;
-  --color-terra-mist: #F0ECE4;
+  --color-terra-forest: #46533C;
+  --color-terra-slate: #647991;
+  --color-terra-terracotta: #A76545;
 }
 
 * {
@@ -17,12 +18,34 @@
   scrollbar-color: transparent transparent;
 }
 *:hover {
-  scrollbar-color: rgba(92,66,48,0.3) transparent;
+  scrollbar-color: rgba(92, 66, 48, 0.3) transparent;
 }
 
 html {
   font-family: 'Work Sans', system-ui, sans-serif;
-  background-color: #F6F0E6;
+  background-color: #F5F0E6;
   color: #3B2D1E;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5F0E6;
+  color: #3B2D1E;
+}
+
+/* Smooth transitions */
+a,
+button {
+  transition: all 0.2s ease-out;
+}
+
+/* Focus states for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #6B7B4A;
+  outline-offset: 2px;
+}
+
+img {
+  display: block;
 }
