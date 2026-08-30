@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-terra-cream: #F6F0E6;
+  --color-terra-sand: #EAE0CC;
+  --color-terra-bark: #3B2D1E;
+  --color-terra-brown: #5C4230;
+  --color-terra-clay: #C4714A;
+  --color-terra-olive: #6B7B4A;
+  --color-terra-slate: #4A6272;
+  --color-terra-mist: #F0ECE4;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+*:hover {
+  scrollbar-color: rgba(92,66,48,0.3) transparent;
+}
+
+html {
+  font-family: 'Work Sans', system-ui, sans-serif;
+  background-color: #F6F0E6;
+  color: #3B2D1E;
+  scroll-behavior: smooth;
+}
